@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Join TRADE WITH MUNAAF — free stock market education community on Telegram.">
+<title>TRADE WITH MUNAAF | Official Community</title>
+
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #eafff2;
+  background: #05100A;
+}
+
+.wrapper { width: 100%; max-width: 420px; }
+
+.card {
+  background: #0C1912;
+  border: 1px solid rgba(212,175,55,0.22);
+  border-radius: 18px;
+  padding: 22px 20px 24px;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.urgency {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(212,175,55,0.12);
+  border: 1px solid rgba(212,175,55,0.35);
+  color: #D4AF37;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+.urgency i { font-size: 9px; animation: blink 1.4s ease-in-out infinite; }
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.avatar-wrap {
+  position: relative;
+  width: 84px;
+  height: 84px;
+  margin: 0 auto 12px;
+}
+.avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #D4AF37;
+  background: #123822;
+  display: block;
+}
+.verified-tick {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #D4AF37;
+  border: 3px solid #0C1912;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: #06140c;
+}
+
+h1 {
+  font-size: 21px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+.subtitle {
+  font-size: 12.5px;
+  color: #a9d4bb;
+  margin-bottom: 16px;
+}
+
+.quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 18px;
+  padding: 12px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.quick-stats .q strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 900;
+  color: #D4AF37;
+}
+.quick-stats .q span {
+  font-size: 9.5px;
+  color: #7fa694;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 22px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #D4AF37 0%, #0B6E4F 100%);
+  color: #06140c;
+  font-size: 17px;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  box-shadow: 0 0 0 5px rgba(212,175,55,0.15), 0 18px 40px rgba(212,175,55,0.4);
+  animation: pulse-glow 1.8s ease-in-out infinite;
+  transition: transform 0.15s ease;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+.cta-btn:active { transform: scale(0.96); }
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 5px rgba(212,175,55,0.15), 0 18px 40px rgba(212,175,55,0.4); }
+  50% { box-shadow: 0 0 0 10px rgba(212,175,55,0.25), 0 18px 46px rgba(212,175,55,0.6); }
+}
+
+.timer-text {
+  font-size: 12px;
+  color: #5c8a71;
+  margin-bottom: 18px;
+}
+.timer-text span { color: #D4AF37; font-weight: 800; }
+
+.quick-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.qf-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #d3f5e3;
+}
+.qf-item i { color: #D4AF37; font-size: 12px; flex-shrink: 0; }
+
+.trust-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 10.5px;
+  color: #6f9d84;
+}
+.trust-row i { color: #ffc107; font-size: 10px; }
+
+.disclaimer {
+  margin-top: 16px;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #3d5648;
+  text-align: center;
+  padding: 0 8px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1398111302287713');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1398111302287713&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<div class="wrapper">
+  <div class="card">
+
+    <div class="urgency"><i class="fas fa-circle"></i> ఈరోజే చేరండి — పరిమిత స్థానాలు</div>
+
+    <div class="avatar-wrap">
+      <img src="munaf.jpg" class="avatar" alt="Profile Image" width="84" height="84" decoding="async" fetchpriority="high">
+      <div class="verified-tick"><i class="fas fa-check"></i></div>
+    </div>
+    <h1>TRADE WITH MUNAAF</h1>
+    <p class="subtitle">స్టాక్ మార్కెట్ &amp; Financial Trading Education</p>
+
+    <div class="trust-row">
+      <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      &nbsp;భారతదేశవ్యాప్తంగా వేలాది మంది నమ్మకం
+    </div>
+
+    <div class="quick-features">
+      <div class="qf-item"><i class="fas fa-check-circle"></i> ప్రతిరోజు Market Updates &amp; Insights</div>
+      <div class="qf-item"><i class="fas fa-check-circle"></i> ఉచిత Educational Content, no hidden fees</div>
+      <div class="qf-item"><i class="fas fa-check-circle"></i> ప్రారంభకులకు సులభమైన వివరణ</div>
+      <div class="qf-item"><i class="fas fa-check-circle"></i> పూర్తి Active Community Support</div>
+    </div>
+
+    <div class="quick-stats">
+      <div class="q"><strong>100%</strong><span>ప్రారంభకులకు</span></div>
+      <div class="q"><strong>ప్రతిరోజు</strong><span>Updates</span></div>
+      <div class="q"><strong>ఉచితం</strong><span>Access</span></div>
+    </div>
+
+    <a class="cta-btn" id="telegramBtn" href="https://t.me/+AbP1cOTbkdQ2YThl" rel="noopener noreferrer">
+      <i class="fab fa-telegram-plane"></i> JOIN NOW — IT'S FREE
+    </a>
+    <div class="timer-text">
+      ⏳ ఆటోమేటిక్‌గా Redirect అవుతుంది <span id="count">8</span>s లో...
+    </div>
+  </div>
+
+  <div class="disclaimer">
+    <strong>Disclaimer:</strong> ఈ platform కేవలం educational మరియు informational objectives కోసం మాత్రమే. మేము ఏ విధమైన financial advice అందించము. ఏదైనా నిర్ణయం తీసుకునే ముందు దయచేసి మీ research చేసుకోండి.
+  </div>
+</div>
+
+<script>
+(function() {
+  const telegramLink = "https://t.me/+AbP1cOTbkdQ2YThl";
+  let time = 30;
+  const counter = document.getElementById("count");
+  const telegramBtn = document.getElementById("telegramBtn");
+
+  telegramBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (window.fbq) {
+      fbq('track', 'Subscribe', { content_name: 'Telegram Community', button_click: true }, { eventID: 'telegram_subscribe_' + Date.now() });
+    }
+    setTimeout(() => {
+      window.location.href = telegramLink;
+    }, 200);
+  });
+
+  const countdown = setInterval(() => {
+    time--;
+    counter.textContent = time;
+    if (time <= 0) {
+      clearInterval(countdown);
+      window.location.href = telegramLink;
+    }
+  }, 1000);
+})();
+</script>
+
+</body>
+</html>
